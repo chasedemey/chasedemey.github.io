@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/main.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome | Chase DeMey</title>
+	<style>
+		body {
+			margin: 0;
+			background: #f6f8fc;
+			color: #18243a;
+			font: 1.125rem/1.6 system-ui, sans-serif;
+		}
+
+		main {
+			max-width: 42rem;
+			margin: 0 auto;
+			padding: clamp(3rem, 12vw, 8rem) 1.5rem;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: clamp(2.5rem, 8vw, 4.5rem);
+			line-height: 1.1;
+		}
+
+		.project-link {
+			display: inline-block;
+			margin-top: 0.75rem;
+			padding: 0.65rem 1rem;
+			border-radius: 0.5rem;
+			background: #25499a;
+			color: white;
+			font-weight: 600;
+		}
+
+		.project-link:hover {
+			background: #193671;
+		}
+	</style>
 </head>
 <body>
-<h1 style="color:blue;">Click Now v</h1>
-<div class="topnav">
-	
-</div>
-<p id="counter">0</p>
-<p id="clickValue">1</p>
-
-
-<button type="button" id="clickButton">Click Me!</button>
-<button type="button" id="upgradePlusOne">Upgrade Click Value</button>
-	
+	<main>
+		<h1>Welcome!</h1>
+		<p>I'm Chase DeMey. This is where I share projects as I learn web development.</p>
+		<a class="project-link" href="./clicker/">Play the Clicker</a>
+	</main>
 </body>
 </html>
